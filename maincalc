@@ -1,0 +1,81 @@
+import math
+
+while True:
+    question1 = input("What do you want to calculate?\nNatural Logs\nCommon Logs\nCustom Logs\nAddition (2 numbers)\nSubtraction (2 numbers)\nMultiply (2 numbers)\nDivide (2 numbers)\nAnswer: ").lower()
+    if question1 == "natural logs":
+        a = float(input("Input a number: "))
+        print(math.log(a))
+    elif question1 == "natural":
+        a = float(input("Input a number: "))
+        print(math.log(a))
+    elif question1 == "ln":
+        a = float(input("Input a number: "))
+        print(math.log(a))
+    elif question1 == "natural log":
+        a = float(input("Input a number: "))
+        print(math.log(a))
+    elif question1 == "common logs":
+        b = float(input("Input a number: "))
+        print(math.log10(b))
+    elif question1 == "common":
+        b = float(input("Input a number: "))
+        print(math.log10(b))
+    elif question1 == "common log":
+        b = float(input("Input a number: "))
+        print(math.log10(b))
+    elif question1 == "custom":
+        z = float(input("Input the base: "))
+        zz = float(input("Input the result: "))
+        print(math.log(zz,z))
+    elif question1 == "custom logs":
+        z = float(input("Input the base: "))
+        zz = float(input("Input the result: "))
+        print(math.log(zz,z))
+    elif question1 == "custom log":
+        z = float(input("Input the base: "))
+        zz = float(input("Input the result: "))
+        print(math.log(zz,z))
+    elif question1 == "addition":
+        c = float(input("Input a number: "))
+        d = float(input("Input another number: "))
+        sum = c + d
+        print(sum)
+    elif question1 == "add":
+        c = float(input("Input a number: "))
+        d = float(input("Input another number: "))
+        sum = c + d
+        print(sum)
+    elif question1 == "subtract":
+        e = float(input("Input a number: "))
+        f = float(input("Input the subtrahend: "))
+        result = e - f
+        print(result)
+    elif question1 == "subtraction":
+        e = float(input("Input a number: "))
+        f = float(input("Input the subtrahend: "))
+        result = e - f
+        print(result)
+    elif question1 == "multiply":
+        g = float(input("Input the multiplicand: "))
+        h = float(input("Input the multiplier: "))
+        product = g * h
+        print(product)
+    elif question1 == "multiplication":
+        g = float(input("Input the multiplicand: "))
+        h = float(input("Input the multiplier: "))
+        product = g * h
+        print(product)
+    elif question1 == "divide":
+        i = float(input("Input the dividend: "))
+        j = float(input("Input the divisor: "))
+        quotient = i / j
+        print(quotient)
+    elif question1 == "division":
+        i = float(input("Input the dividend: "))
+        j = float(input("Input the divisor: "))
+        quotient = i / j
+        print(quotient)
+    retry = input("Use calculator again? yes/no: ").lower()
+    if retry != "yes":
+        break
+print("Bye!")
